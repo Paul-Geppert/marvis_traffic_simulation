@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <vType id="car" minGap="2.50" maxSpeed="55.56" accel="2.6" decel="4.5" sigma="0.5" tau="1.0"/>
+    <vType id="rail" length="102.00" maxSpeed="100.00" vClass="rail" accel="5" decel="10" sigma="1.0"/>
+
+    <route edges="nw_center center_se" color="yellow" id="car_nw_se"/>
+    <route edges="se_center center_nw" color="yellow" id="car_se_nw"/>
+    <route edges="ne_center center_sw" color="yellow" id="train_ne_sw"/>
+    
+    <vehicle id="car_0" type="car" depart="0.00" route="car_se_nw"/>
+    <vehicle id="train" type="rail" depart="0.00" route="train_ne_sw"/>
+    <vehicle id="car_1" type="car" depart="3.00" route="car_se_nw"/>
+    <vehicle id="car_2" type="car" depart="4.00" route="car_se_nw"/>
+    <vehicle id="car_3" type="car" depart="6.00" route="car_nw_se"/>
+    <vehicle id="car_4" type="car" depart="9.00" route="car_se_nw"/>
+    <vehicle id="car_5" type="car" depart="13.00" route="car_nw_se"/>
+    <vehicle id="car_6" type="car" depart="20.00" route="car_se_nw"/>
+    <vehicle id="car_7" type="car" depart="22.00" route="car_nw_se"/>
+    <vehicle id="car_8" type="car" depart="33.00" route="car_se_nw"/>
+    <vehicle id="car_10" type="car" depart="44.00" route="car_se_nw"/>
+    <vehicle id="car_9" type="car" depart="44.00" route="car_nw_se"/>
+    <vehicle id="car_11" type="car" depart="47.00" route="car_nw_se"/>
+    <vehicle id="car_12" type="car" depart="50.00" route="car_nw_se"/>
+    <vehicle id="car_13" type="car" depart="62.00" route="car_nw_se"/>
+    <vehicle id="car_14" type="car" depart="63.00" route="car_nw_se"/>
+    <vehicle id="car_15" type="car" depart="65.00" route="car_se_nw"/>
+    <vehicle id="car_16" type="car" depart="67.00" route="car_nw_se"/>
+    <vehicle id="car_17" type="car" depart="68.00" route="car_nw_se"/>
+    <vehicle id="car_18" type="car" depart="80.00" route="car_nw_se"/>
+    <vehicle id="car_19" type="car" depart="82.00" route="car_se_nw"/>
+    <vehicle id="car_20" type="car" depart="88.00" route="car_nw_se"/>
+    <vehicle id="car_21" type="car" depart="98.00" route="car_se_nw"/>
+</routes>

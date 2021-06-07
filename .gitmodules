@@ -1,0 +1,6 @@
+[submodule "marvis"]
+	path = marvis
+	url = https://github.com/Paul-Geppert/marvis
+[submodule "ns-3_c-v2x"]
+	path = ns-3_c-v2x
+	url = https://github.com/Paul-Geppert/ns-3_c-v2x

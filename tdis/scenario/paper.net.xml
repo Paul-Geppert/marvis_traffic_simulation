@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 04/29/21 14:21:15 by Eclipse SUMO netedit Version 1.8.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\Paul\Paul-EDrive\Desktop\Sumo_Paper\paper_scenario\data\paper.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\Paul\Paul-EDrive\Desktop\Sumo_Paper\paper_scenario\data\paper.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-1000.00,-1000.00,1000.00,1000.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":gneJ1_0" function="internal">
+        <lane id=":gneJ1_0_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="9.40" shape="2.19,4.45 -4.45,-2.19"/>
+    </edge>
+    <edge id=":gneJ1_1" function="internal">
+        <lane id=":gneJ1_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="6.20" shape="2.19,0.07 -2.19,4.45"/>
+    </edge>
+    <edge id=":gneJ1_2" function="internal">
+        <lane id=":gneJ1_2_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="6.20" shape="-4.45,2.19 -0.07,-2.19"/>
+    </edge>
+
+    <edge id="center_nw" from="gneJ1" to="NW" priority="-1">
+        <lane id="center_nw_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="702.41" shape="-2.19,4.45 -498.87,501.13"/>
+    </edge>
+    <edge id="center_se" from="gneJ1" to="SE" priority="-1">
+        <lane id="center_se_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="705.61" shape="-0.07,-2.19 498.87,-501.13"/>
+    </edge>
+    <edge id="center_sw" from="gneJ1" to="SW" priority="-1">
+        <lane id="center_sw_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="1409.51" shape="-4.45,-2.19 -1001.13,-998.87"/>
+    </edge>
+    <edge id="ne_center" from="NE" to="gneJ1" priority="-1">
+        <lane id="ne_center_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="1409.51" shape="998.87,1001.13 2.19,4.45"/>
+    </edge>
+    <edge id="nw_center" from="NW" to="gneJ1" priority="-1">
+        <lane id="nw_center_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="702.41" shape="-501.13,498.87 -4.45,2.19"/>
+    </edge>
+    <edge id="se_center" from="SE" to="gneJ1" priority="-1">
+        <lane id="se_center_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="705.61" shape="501.13,-498.87 2.19,0.07"/>
+    </edge>
+
+    <junction id="NE" type="dead_end" x="1000.00" y="1000.00" incLanes="" intLanes="" shape="1000.00,1000.00 997.74,1002.26"/>
+    <junction id="NW" type="dead_end" x="-500.00" y="500.00" incLanes="center_nw_0" intLanes="" shape="-500.00,500.00 -497.74,502.26 -500.00,500.00"/>
+    <junction id="SE" type="dead_end" x="500.00" y="-500.00" incLanes="center_se_0" intLanes="" shape="500.00,-500.00 497.74,-502.26 500.00,-500.00"/>
+    <junction id="SW" type="dead_end" x="-1000.00" y="-1000.00" incLanes="center_sw_0" intLanes="" shape="-1002.26,-997.74 -1000.00,-1000.00"/>
+    <junction id="gneJ1" type="priority" x="0.00" y="0.00" incLanes="ne_center_0 se_center_0 nw_center_0" intLanes=":gneJ1_0_0 :gneJ1_1_0 :gneJ1_2_0" shape="1.06,5.59 3.32,3.32 2.85,2.62 2.79,2.26 2.85,1.91 3.03,1.56 3.32,1.20 -1.20,-3.32 -1.91,-2.85 -2.26,-2.79 -2.62,-2.85 -2.97,-3.03 -3.32,-3.32 -5.59,-1.06 -5.11,-0.35 -5.06,0.00 -5.11,0.35 -5.29,0.71 -5.59,1.06 -1.06,5.59 -0.35,5.11 -0.00,5.06 0.35,5.11 0.71,5.29">
+        <request index="0" response="000" foes="110" cont="0"/>
+        <request index="1" response="001" foes="001" cont="0"/>
+        <request index="2" response="001" foes="001" cont="0"/>
+    </junction>
+
+    <connection from="ne_center" to="center_sw" fromLane="0" toLane="0" via=":gneJ1_0_0" dir="s" state="M"/>
+    <connection from="nw_center" to="center_se" fromLane="0" toLane="0" via=":gneJ1_2_0" dir="s" state="m"/>
+    <connection from="se_center" to="center_nw" fromLane="0" toLane="0" via=":gneJ1_1_0" dir="s" state="m"/>
+
+    <connection from=":gneJ1_0" to="center_sw" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ1_1" to="center_nw" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ1_2" to="center_se" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>
