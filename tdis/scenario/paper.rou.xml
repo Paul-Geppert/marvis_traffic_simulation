@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- generated on 2021-06-15 17:22:20 by Eclipse SUMO netedit Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/paul/masterarbeit/converter-simulation/tdis/scenario/paper.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/paul/masterarbeit/converter-simulation/tdis/scenario/paper.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/paul/masterarbeit/converter-simulation/tdis/scenario/paper.add.xml"/>
+        <route-files value="/home/paul/masterarbeit/converter-simulation/tdis/scenario/paper.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    
     <vType id="car" minGap="2.50" maxSpeed="55.56" accel="2.6" decel="4.5" sigma="0.5" tau="1.0"/>
     <vType id="rail" length="102.00" maxSpeed="100.00" vClass="rail" accel="5" decel="10" sigma="1.0"/>
-
     <route edges="nw_center center_se" color="yellow" id="car_nw_se"/>
     <route edges="se_center center_nw" color="yellow" id="car_se_nw"/>
     <route edges="ne_center center_sw" color="yellow" id="train_ne_sw"/>
-    
     <vehicle id="car_0" type="car" depart="0.00" route="car_se_nw"/>
     <vehicle id="train" type="rail" depart="0.00" route="train_ne_sw"/>
     <vehicle id="car_1" type="car" depart="3.00" route="car_se_nw"/>

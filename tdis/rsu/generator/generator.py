@@ -13,6 +13,14 @@ from .spatem_generation import periodicallySendSpatem, SpatemInfo
 MovementPhaseState_permissive_Movement_Allowed = 5
 MovementPhaseState_caution_Conflicting_Traffic = 9
 
+# Timeframe to close the level crossing before the train arrives
+earliest_time_to_close_lc = 15
+latest_time_to_close_lc = 8
+
+# Timeframe to open the level crossing after the train crossed the level crossing
+earliest_time_to_open_lc = 7
+latest_time_to_open_lc = 15
+
 def parseArgs():
     parser = argparse.ArgumentParser()
     parser.add_argument('--interface', '-i',
@@ -77,14 +85,6 @@ def main():
         # For sake of simplicity, do not use timing (minEndTime and maxEndTime) as defined in the standard
         # (indicating the point in time for the current or next hour when the state changes in 1/10 sec)
         # but use it to indicate, when the state will change (time until change in sec)
-
-        # Timeframe to close the level crossing before the train arrives
-        earliest_time_to_close_lc = 25
-        latest_time_to_close_lc = 15
-
-        # Timeframe to open the level crossing after the train crossed the level crossing
-        earliest_time_to_open_lc = 7
-        latest_time_to_open_lc = 15
 
         if latitude > 0 and longitude > 0:
             if expected_arrival_time < (earliest_time_to_close_lc + 

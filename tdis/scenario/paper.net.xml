@@ -41,7 +41,7 @@
     <location netOffset="0.00,0.00" convBoundary="-1000.00,-1000.00,1000.00,1000.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
 
     <edge id=":gneJ1_0" function="internal">
-        <lane id=":gneJ1_0_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="9.40" shape="2.19,4.45 -4.45,-2.19"/>
+        <lane id=":gneJ1_0_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="22.22" length="9.40" shape="2.19,4.45 -4.45,-2.19"/>
     </edge>
     <edge id=":gneJ1_1" function="internal">
         <lane id=":gneJ1_1_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="6.20" shape="2.19,0.07 -2.19,4.45"/>
@@ -57,10 +57,10 @@
         <lane id="center_se_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="705.61" shape="-0.07,-2.19 498.87,-501.13"/>
     </edge>
     <edge id="center_sw" from="gneJ1" to="SW" priority="-1">
-        <lane id="center_sw_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="1409.51" shape="-4.45,-2.19 -1001.13,-998.87"/>
+        <lane id="center_sw_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="22.22" length="1409.51" shape="-4.45,-2.19 -1001.13,-998.87"/>
     </edge>
     <edge id="ne_center" from="NE" to="gneJ1" priority="-1">
-        <lane id="ne_center_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="25.00" length="1409.51" shape="998.87,1001.13 2.19,4.45"/>
+        <lane id="ne_center_0" index="0" allow="tram rail_urban rail rail_electric rail_fast" speed="22.22" length="1409.51" shape="998.87,1001.13 2.19,4.45"/>
     </edge>
     <edge id="nw_center" from="NW" to="gneJ1" priority="-1">
         <lane id="nw_center_0" index="0" disallow="pedestrian tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="702.41" shape="-501.13,498.87 -4.45,2.19"/>
